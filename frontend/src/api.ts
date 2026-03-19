@@ -47,4 +47,3 @@ export async function generateCharts(fileId: string, rules: ChartRule[]): Promis
   if (!data.success) throw new Error('Generate failed')
   return data
 }
-}
