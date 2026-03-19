@@ -1,0 +1,116 @@
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.uploadZone {
+  margin-bottom: 1.5rem;
+}
+
+.dragger {
+  background: var(--bg-elevated) !important;
+  border: 2px dashed var(--border) !important;
+  border-radius: var(--radius) !important;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.dragger:hover {
+  border-color: var(--accent-emerald) !important;
+  background: rgba(16, 185, 129, 0.05) !important;
+}
+
+.dragger :global(.ant-upload-drag-container) {
+  padding: 2rem;
+}
+
+.draggerIcon {
+  margin-bottom: 0.5rem;
+}
+
+.draggerText {
+  font-size: 1rem;
+  color: var(--text-primary);
+  margin-bottom: 0.25rem;
+}
+
+.draggerHint {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+.preview {
+  border-top: 1px solid var(--border);
+  padding-top: 1.5rem;
+}
+
+.previewHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+}
+
+.previewHeader span:first-of-type {
+  margin-left: 0.25rem;
+}
+
+.viewFullBtn {
+  margin-left: auto !important;
+  color: var(--accent-emerald) !important;
+}
+
+.viewFullBtn:hover {
+  color: var(--accent-emerald) !important;
+  opacity: 0.9;
+}
+
+.fullTableHint {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.columnBadge {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  color: var(--text-secondary);
+}
+
+.table {
+  background: transparent !important;
+}
+
+.table :global(.ant-table) {
+  background: transparent !important;
+}
+
+.table :global(.ant-table-thead > tr > th) {
+  background: var(--bg-elevated) !important;
+  border-color: var(--border) !important;
+  color: var(--text-secondary) !important;
+  font-weight: 500;
+}
+
+.table :global(.ant-table-tbody > tr > td) {
+  border-color: var(--border) !important;
+  color: var(--text-primary) !important;
+}
+
+.table :global(.ant-table-tbody > tr:hover > td) {
+  background: rgba(16, 185, 129, 0.05) !important;
+}
